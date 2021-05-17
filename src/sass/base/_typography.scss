@@ -1,0 +1,33 @@
+@use '../utils/' as *;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $color-text-light;
+  font-family: $font-family;
+  font-size: $font-size-body;
+  font-weight: $font-weight-normal;
+  line-height: $line-height;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: $font-weight-bold;
+  color: $color-text-dark;
+  margin: 0.5em 0 0;
+}
+
+h1 {
+  font-size: $font-size-body * 3;
+}
+
+h2 {
+  font-size: $font-size-body * 2;
+}
+
+h3 {
+  font-size: $font-size-body * 1.5;
+}
