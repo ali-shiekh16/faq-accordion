@@ -1,0 +1,17 @@
+@use '../utils/' as *;
+
+.card {
+  background: $color-white;
+  border-radius: 30px;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 4em 3rem;
+
+  h1 {
+    margin-top: 0;
+  }
+
+  @include media($tablets) {
+    padding: 5em;
+  }
+}

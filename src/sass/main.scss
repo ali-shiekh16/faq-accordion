@@ -1,1 +1,10 @@
-@use './base/' as *;
+@use './base/' as base;
+@use './components/' as *;
+@use './utils/' as *;
+
+body {
+  background: linear-gradient($color-secondary, $color-tertiary);
+  display: grid;
+  height: 100vh;
+  place-content: center;
+}
