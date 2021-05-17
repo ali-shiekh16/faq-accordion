@@ -1,0 +1,49 @@
+@use '../utils/' as *;
+
+.collapsible {
+  border-bottom: solid 1px $color-border;
+  padding: 1.5em 0;
+
+  &__header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    align-self: center;
+    margin: 0;
+    width: 1em;
+    transition: 0.2s transform;
+  }
+
+  &__title {
+    font-size: $font-size-body * 1.1;
+    font-weight: $font-weight-normal;
+    margin: 0;
+    transition: 0.2s all;
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+
+  $this: &;
+  &--expanded {
+    #{$this}__title {
+      font-weight: $font-weight-bold;
+      margin: 0 0 0.7em;
+    }
+
+    #{$this}__icon {
+      margin-bottom: 1.3em;
+      transform: rotate(180deg);
+    }
+
+    #{$this}__content {
+      max-height: 100vh;
+    }
+  }
+}

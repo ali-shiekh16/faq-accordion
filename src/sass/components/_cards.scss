@@ -7,11 +7,16 @@
   max-width: 1140px;
   padding: 4em 3rem;
 
-  h1 {
+  &__title {
     margin-top: 0;
+    text-align: center;
   }
 
   @include media($tablets) {
     padding: 5em;
+
+    &__title {
+      text-align: left;
+    }
   }
 }
