@@ -1,11 +1,12 @@
 @use './base/' as base;
 @use './components/' as *;
+@use './pages' as pages;
 @use './utils/' as *;
 
 body {
-  background: linear-gradient($color-secondary, $color-tertiary);
+  background: linear-gradient($color-secondary, $color-tertiary) no-repeat;
   display: grid;
-  height: 100vh;
-  padding: 0 3rem;
+  min-height: 100vh;
+  padding: 0 2rem;
   place-content: center;
 }

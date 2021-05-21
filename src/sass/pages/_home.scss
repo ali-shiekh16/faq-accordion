@@ -1,0 +1,60 @@
+@use '../utils' as *;
+
+.accordion-card {
+  margin-top: 30vw;
+  padding-top: 0;
+
+  &__images {
+    background: url(/images/bg-pattern-mobile.svg) no-repeat center top / 90%;
+    max-height: 18vh;
+    text-align: center;
+  }
+
+  &__illustration {
+    transform: translate(-5%, -55%);
+    width: 100%;
+    object-fit: contain;
+  }
+
+  @include media($mobiles) {
+    margin-top: 0;
+    padding-top: 4em;
+
+    &__illustration {
+      display: none;
+    }
+
+    &__images {
+      background: none;
+    }
+  }
+
+  @include media($desktops) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: url(/images/illustration-woman-online-desktop.svg) no-repeat -16%
+        55% / 50%,
+      url(/images/bg-pattern-desktop.svg) no-repeat -465% 60% / 90%;
+
+    background-color: $color-white;
+  }
+}
+
+.container {
+  position: relative;
+
+  .illustration-box {
+    display: none;
+  }
+
+  @include media($desktops) {
+    .illustration-box {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: -8.5%;
+      transform: translateY(-10%);
+      animation: float infinite 2s;
+    }
+  }
+}

@@ -13,94 +13,118 @@
     <title>FAQ - Accordion</title>
   </head>
   <body>
-    <article class="card">
-      <h1 class="card__title">FAQ</h1>
-      <article class="collapsible">
-        <header class="collapsible__header">
-          <h2 class="collapsible__title">
-            How many team members can I invite?
-          </h2>
-          <img
-            class="collapsible__icon"
-            src="./images/icon-arrow-down.svg"
-            alt=""
-          />
-        </header>
-        <div class="collapsible__content">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
-            modi repellat magnam. Numquam, illo sint.
-          </p>
+    <div class="container">
+      <img
+        class="illustration-box"
+        src="./images/illustration-box-desktop.svg"
+        alt=""
+      />
+      <article class="card accordion-card">
+        <div class="accordion-card__images">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/illustration-woman-online-desktop.svg"
+            />
+            <img
+              class="accordion-card__illustration"
+              src="./images/illustration-woman-online-mobile.svg"
+              alt="Woman using computer illustration."
+            />
+          </picture>
+        </div>
+        <div class="accordion-card__content">
+          <h1 class="card__title">FAQ</h1>
+          <article class="collapsible">
+            <header class="collapsible__header">
+              <h2 class="collapsible__title">
+                How many team members can I invite?
+              </h2>
+              <img
+                class="collapsible__icon"
+                src="./images/icon-arrow-down.svg"
+                alt=""
+              />
+            </header>
+            <div class="collapsible__content">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aspernatur modi repellat magnam. Numquam, illo sint.
+              </p>
+            </div>
+          </article>
+          <article class="collapsible collapsible--expanded">
+            <header class="collapsible__header">
+              <h2 class="collapsible__title">
+                What is the maximum file upload size?
+              </h2>
+              <img
+                class="collapsible__icon"
+                src="./images/icon-arrow-down.svg"
+                alt=""
+              />
+            </header>
+            <div class="collapsible__content">
+              <p>
+                No more than 2GB. All files in your account must fit your
+                alloted storage space
+              </p>
+            </div>
+          </article>
+          <article class="collapsible">
+            <header class="collapsible__header">
+              <h2 class="collapsible__title">How do I reset my password?</h2>
+              <img
+                class="collapsible__icon"
+                src="./images/icon-arrow-down.svg"
+                alt=""
+              />
+            </header>
+            <div class="collapsible__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia iusto velit sed est molestias quos amet, ratione
+                doloremque perferendis dolores?
+              </p>
+            </div>
+          </article>
+          <article class="collapsible">
+            <header class="collapsible__header">
+              <h2 class="collapsible__title">Can I cancel my subscription?</h2>
+              <img
+                class="collapsible__icon"
+                src="./images/icon-arrow-down.svg"
+                alt=""
+              />
+            </header>
+            <div class="collapsible__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+                voluptatibus.
+              </p>
+            </div>
+          </article>
+          <article class="collapsible">
+            <header class="collapsible__header">
+              <h2 class="collapsible__title">
+                Do you provide additional support?
+              </h2>
+              <img
+                class="collapsible__icon"
+                src="./images/icon-arrow-down.svg"
+                alt=""
+              />
+            </header>
+            <div class="collapsible__content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Numquam tempora corporis voluptate, sit quibusdam facere.
+              </p>
+            </div>
+          </article>
         </div>
       </article>
-      <article class="collapsible collapsible--expanded">
-        <header class="collapsible__header">
-          <h2 class="collapsible__title">
-            What is the maximum file upload size?
-          </h2>
-          <img
-            class="collapsible__icon"
-            src="./images/icon-arrow-down.svg"
-            alt=""
-          />
-        </header>
-        <div class="collapsible__content">
-          <p>
-            No more than 2GB. All files in your account must fit your alloted
-            storage space
-          </p>
-        </div>
-      </article>
-      <article class="collapsible">
-        <header class="collapsible__header">
-          <h2 class="collapsible__title">How do I reset my password?</h2>
-          <img
-            class="collapsible__icon"
-            src="./images/icon-arrow-down.svg"
-            alt=""
-          />
-        </header>
-        <div class="collapsible__content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-            iusto velit sed est molestias quos amet, ratione doloremque
-            perferendis dolores?
-          </p>
-        </div>
-      </article>
-      <article class="collapsible">
-        <header class="collapsible__header">
-          <h2 class="collapsible__title">Can I cancel my subscription?</h2>
-          <img
-            class="collapsible__icon"
-            src="./images/icon-arrow-down.svg"
-            alt=""
-          />
-        </header>
-        <div class="collapsible__content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-            voluptatibus.
-          </p>
-        </div>
-      </article>
-      <article class="collapsible">
-        <header class="collapsible__header">
-          <h2 class="collapsible__title">Do you provide additional support?</h2>
-          <img
-            class="collapsible__icon"
-            src="./images/icon-arrow-down.svg"
-            alt=""
-          />
-        </header>
-        <div class="collapsible__content">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
-            tempora corporis voluptate, sit quibusdam facere.
-          </p>
-        </div>
-      </article>
-    </article>
+    </div>
     <script src="./js/index.js" defer></script>
   </body>
 </html>

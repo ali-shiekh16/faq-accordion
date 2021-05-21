@@ -12,9 +12,9 @@
 
   &__icon {
     align-self: center;
-    margin: 0;
-    width: 1em;
+    margin: 0 0 0 0.5em;
     transition: 0.2s transform;
+    width: 1em;
   }
 
   &__title {
@@ -38,7 +38,7 @@
     }
 
     #{$this}__icon {
-      margin-bottom: 1.3em;
+      margin: 0 0 1.3em 0.5em;
       transform: rotate(180deg);
     }
 
